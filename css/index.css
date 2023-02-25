@@ -2,3 +2,33 @@
     margin: 0px;
     padding: 0px;
 }
+
+.paginaPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.paginaPrincipal header{
+    text-align: center;
+    width: 100%;
+    background-color: #5a5a5a;
+}*/
+
+.paginaPrincipal footer,
+.paginaPrincipal header{
+    width: 100%;
+    background-color: #5a5a5a;
+    height: 100px;
+    /*Los siguientes 3 renglones son para centrar los elementos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorWhite{
+    color: white;
+}

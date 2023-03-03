@@ -5,7 +5,7 @@
 
 .paginaPrincipal{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Organiza los elementos de manera vertical y en columnas*/
     width: 100%;
     height: 100vh;
     align-items: center;
@@ -22,7 +22,7 @@
 .paginaPrincipal header{
     width: 100%;
     background-color: #5a5a5a;
-    height: 100px;
+    height: 150px;
     /*Los siguientes 3 renglones son para centrar los elementos*/
     display: flex;
     justify-content: center;
@@ -31,4 +31,24 @@
 
 .colorWhite{
     color: white;
+}
+
+.paginaPrincipal .contenido{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+}
+
+.contenido nav{
+    width: 200px;
+    background-color: #8f8e8c;
+    height: calc(100vh - 300px);
+}
+
+.contenido article{
+    width: calc(100% - 200px);
+    height: calc(100vh - 300px);
 }

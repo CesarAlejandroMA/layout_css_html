@@ -1,0 +1,31 @@
+.paginaPrincipal{
+    display: grid;
+    grid-template-areas: "cabecera cabecera"
+    "navegacion contenido"
+    "piePagina piePagina";
+    /*grid-template-areas: "piePagina . navegacion"
+    ". cabecera ."
+    ". . contenido";*/
+    /* espacio . significa una celda vacia*/
+    /*grid-template-columns: 200px calc(100% - 200px);*/
+    grid-template-columns: 1fr 3fr; /*significa que la segunda celda 
+    es 3 veces más grande que la primera*/
+    grid-template-rows: 150px calc(100vh - 300px) 150px;
+    grid-gap: 20px;
+}
+
+.paginaPrincipal header{
+    grid-area: cabecera;
+}
+
+.paginaPrincipal nav{
+    grid-area: navegacion;
+}
+
+.paginaPrincipal article{
+    grid-area: contenido;
+}
+
+.paginaPrincipal footer{
+    grid-area: piePagina;
+}

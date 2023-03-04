@@ -29,3 +29,29 @@
 .paginaPrincipal footer{
     grid-area: piePagina;
 }
+
+.paginaPrincipal article p{
+    font-family: 'Rubik Iso', cursive;
+}
+
+.paginaPrincipal article p:hover{ /*Pasar el mouse por encima de un texto*/
+    color: red;
+    background-color: lightblue;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.paginaPrincipal nav ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder; /*Negrilla*/
+    word-spacing: 20px;
+    text-decoration: none;
+    padding: 25px;
+}
+
+.paginaPrincipal nav ul li a:hover{
+    color: #ffffff;
+    background-color: #000000;
+    border-bottom: 2px solid #636363;box-shadow: 10px 5px 30px 5px #ff0000;
+}

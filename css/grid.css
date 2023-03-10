@@ -53,5 +53,6 @@
 .paginaPrincipal nav ul li a:hover{
     color: #ffffff;
     background-color: #000000;
-    border-bottom: 2px solid #636363;box-shadow: 10px 5px 30px 5px #ff0000;
+    border-bottom: 2px solid #636363;
+    box-shadow: 10px 5px 30px 5px #ff0000;
 }

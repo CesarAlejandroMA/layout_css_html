@@ -26,6 +26,7 @@
             lista2.push(3); //Agregar un elemento al arreglo
             console.log(lista2);
 
+            //CREACIÓN DE UN OBJETO
             let persona = {
                 nombre: 'Cesar',
                 apellido: 'Martínez',
@@ -167,6 +168,7 @@
 
             console.log(esMayorEdad(17));
 
+            // función anonima que viene con una variable
             let validarEdad2 = function(edad){ //Función anonima
                 if(persona.edad >= 18){
                     console.log('La persona es mayor de edad');
@@ -177,11 +179,60 @@
 
             validarEdad2(30);
 
+            // funciones anonimas sin la palabra reservada function
             let esMayorEdad2 = (edad) => {
                 return edad>=18? 'Si es mayor de edad':
                 'Es menor de edad';
             }
             console.log(esMayorEdad2(25));
+
+            class Persona{
+                nombre = '';
+                apellido ='';
+                edad = 0;
+                email = '';
+
+                getNombreCompleto(){
+                    return this.nombre + ' ' + this.apellido;
+                }
+
+                esMayorEdad(){
+                    // USANDO IF
+                    // if(this.edad >= 18){
+                    //     return 'Si';
+                    // }else{
+                    //     return 'No';
+                    // }
+
+                    // CONDICIÓN POR ASIGNACIÓN - primer valor cumple
+                    // segundo valor no cumple
+                    return this.edad >= 18 ? 'Si':'No';
+                }
+            }
+
+            let persona1 = new Persona();
+            persona1.nombre = 'Cesar';
+            persona1.apellido = 'Martinez';
+            persona1.edad = 19;
+
+            console.log('Nombre de la persona: ' , persona1.getNombreCompleto());
+            console.log('¿Es mayor de edad? ' , persona1.esMayorEdad());
+
+            class Estudiante extends Persona{
+                codigo = '';
+                cantidadMaterias = 0;
+            }
+
+            class Docuente extends Persona{
+                codigo = '';
+            }
+
+            let estudiante1 = new Estudiante();
+            estudiante1.nombre = 'Alejandro';
+            estudiante1.apellido = 'Avella';
+            estudiante1.codigo = '12345';
+            estudiante1.cantidadMaterias = 7;
+            console.log('Nombre del estudiante: ' , estudiante1.getNombreCompleto());
 
         </script>
     </body>
